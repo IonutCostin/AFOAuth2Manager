@@ -1,5 +1,5 @@
 // AFNetworking.h
-// Copyright (c) 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
+// Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -38,6 +38,7 @@ FOUNDATION_EXPORT const unsigned char AFNetworkingVersionString[];
 #import <AFNetworking/AFURLRequestSerialization.h>
 #import <AFNetworking/AFURLResponseSerialization.h>
 #import <AFNetworking/AFSecurityPolicy.h>
+#import <AFNetworking/AFCompatibilityMacros.h>
 
 #if !TARGET_OS_WATCH
 #import <AFNetworking/AFNetworkReachabilityManager.h>
@@ -51,7 +52,6 @@ FOUNDATION_EXPORT const unsigned char AFNetworkingVersionString[];
 #import <AFNetworking/AFImageDownloader.h>
 #import <AFNetworking/UIActivityIndicatorView+AFNetworking.h>
 #import <AFNetworking/UIButton+AFNetworking.h>
-#import <AFNetworking/UIImage+AFNetworking.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import <AFNetworking/UIProgressView+AFNetworking.h>
 #endif
@@ -59,7 +59,7 @@ FOUNDATION_EXPORT const unsigned char AFNetworkingVersionString[];
 #if TARGET_OS_IOS
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 #import <AFNetworking/UIRefreshControl+AFNetworking.h>
-#import <AFNetworking/UIWebView+AFNetworking.h>
+#import <AFNetworking/WKWebView+AFNetworking.h>
 #endif
 
 
